@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0" />
+    <title>Vivadent</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Course</a></li>
+            <li><a href="services.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+        <div class="text-box">
+            <h1>Learn to code</h1>
+            <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, <br/>but understanding how developers think is
+            invaluable.
+            </p>
+            <a href="" class="hero-btn">Visit Us to Know More!</a>
+    </section>
+
+<!-- Course -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p> See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great,but understanding how developers think is
+            invaluable.
+        </p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Web Development</h3>
+                <p>See how experienced developers solve problems in real-time. Watching
+                    scripted tutorials is great,but understanding how developers think is
+                    invaluable.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>App Development</h3>
+                <p>See how experienced developers solve problems in real-time. Watching
+                    scripted tutorials is great,but understanding how developers think is
+                    invaluable.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Machine Learning</h3>
+                <p>See how experienced developers solve problems in real-time. Watching
+                    scripted tutorials is great,but understanding how developers think is
+                    invaluable.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- JS for Toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      </script>
+  </body>
+</html>
